@@ -1,7 +1,111 @@
-body {
-  background-color: bisque;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.hello {
-  color: red;
+:root {
+  --border: black;
+  --list-color: rgba(212, 209, 209, 0.884);
+  --my-border: 2px solid var(--border);
+}
+
+h1{
+  margin: auto 10px;
+  margin-top: 13px;
+}
+
+main{
+  margin: auto 10px;
+  margin-top: 20px;
+  display:  flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.display{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.display div{
+  display: flex;
+  gap: 20px;
+}
+
+ul {
+  border: var(--my-border);
+  width: 100%;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+ul li:nth-child(odd) {
+  background: var(--list-color);
+}
+
+button {
+  border: var(--my-border);
+  padding: 5px;
+  box-shadow: 2px 2px black;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+form > div {
+  width: 100%;
+}
+
+form button {
+  align-self: flex-end;
+}
+
+input {
+  width: 98%;
+  padding: 6px 0px 6px 5px;
+}
+
+@media only screen and (min-width: 786px) {
+  h1{
+    margin: auto 5%;
+    margin-top: 13px;
+  }
+
+  main{
+    margin: auto 10%;
+    margin-top: 30px;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .display{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .display div{
+    display: flex;
+    gap: 20px;
+  }
+
+  .add_score{
+    width: 50%;
+  }
 }
