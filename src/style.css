@@ -13,26 +13,30 @@
   --my-border: 2px solid var(--border);
 }
 
-h1{
+h1 {
   margin: auto 10px;
   margin-top: 13px;
 }
 
-main{
+main {
   margin: auto 10px;
   margin-top: 20px;
-  display:  flex;
+  display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.display{
+.display {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.display div{
+form > div {
+  width: 100%;
+}
+
+.display div {
   display: flex;
   gap: 20px;
 }
@@ -67,45 +71,41 @@ form {
   width: 100%;
 }
 
-form > div {
-  width: 100%;
-}
-
 form button {
   align-self: flex-end;
 }
 
 input {
   width: 98%;
-  padding: 6px 0px 6px 5px;
+  padding: 6px 0 6px 5px;
 }
 
 @media only screen and (min-width: 786px) {
-  h1{
+  h1 {
     margin: auto 5%;
     margin-top: 13px;
   }
 
-  main{
+  main {
     margin: auto 10%;
     margin-top: 30px;
     flex-direction: row;
     gap: 5rem;
   }
 
-  .display{
+  .display {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
 
-  .display div{
+  .display div {
     display: flex;
     gap: 20px;
   }
 
-  .add_score{
+  .add_score {
     width: 50%;
   }
 }
