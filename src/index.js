@@ -1,49 +1,35 @@
-// import _ from 'lodash';
+import updateList from './modules/updateList';
+import getScore from './modules/getScore';
+import postScore from './modules/postScore';
 import './style.css';
 
-const record = [
-  {
-    name: 'bobby',
-    score: 100,
-  },
-  {
-    name: 'paul',
-    score: 200,
-  },
-  {
-    name: 'richard',
-    score: 50,
-  },
-  {
-    name: 'chidebere',
-    score: 85,
-  },
-  {
-    name: 'kwa',
-    score: 12,
-  },
-  {
-    name: 'Mv',
-    score: 112,
-  },
-  {
-    name: 'stancee',
-    score: 108,
-  },
-];
 
 const list = document.querySelector('ul');
+const name = document.querySelector('#name');
+  const score = document.querySelector('#score');
+  const addBtn = document.getElementById('Add-score-btn');
+  const refresh = document.getElementById('refresh');
 
-const printRecord = () => {
-  let innertext = '';
-
-  record.forEach((player) => {
-    innertext += `
-        <li>${player.name}: ${player.score}</li>
-        `;
-  });
-
-  list.innerHTML = innertext;
+const updateScore = async () => {
+  const fetchAPI = await getScore();
+  const updatedList = fetchAPI.result;
+  updatedList.sort((a, b) => b.score - a.score);
+  updateList(updatedList);
 };
 
-printRecord();
+refresh.addEventListener('click', async () => {
+  list.innerHTML = '';
+  await updateScore();
+});
+
+addBtn.addEventListener('click', async (e) => {
+  console.log('clicked')
+  e.preventDefault();
+  const playerName = name.value;
+  const playerScore = score.value;
+  await postScore( playerName, playerScore );
+  await updateScore();
+
+  name.value = '';
+  score.value = '';
+});
