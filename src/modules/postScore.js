@@ -4,7 +4,7 @@ const postScore = async (name, score) => {
       method: 'POST',
       body: JSON.stringify({
         user: name,
-        score:score,
+        score,
       }),
       headers: { 'Content-type': 'application/json' },
     });
