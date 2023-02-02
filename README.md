@@ -60,36 +60,46 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Leaderboard Scores] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Leaderboard Scores]** is a Webpage that requests and sends data from an API and load that data to the Webpage
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+<!-- ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> Describe the tech stack and include only the relevant sections that apply to your project. -->
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+    <li><a href="#">Webpack</a></li>
   </ul>
 </details>
 
-<details>
+<!-- <details>
   <summary>Server</summary>
   <ul>
     <li><a href="https://expressjs.com/">Express.js</a></li>
   </ul>
-</details>
+</details> -->
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/vi6QIxyEs6VinAHHebFM/scores/">Leaderboard API</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Testing</summary>
+  <ul>
+    <li><a href="#">linters</a></li>
   </ul>
 </details>
 
@@ -97,11 +107,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Sends and receives data from an API]**
+- **[Refreshes the Webpage when the API has been Updated]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,6 +135,9 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+- [git](https://git-scm.com/downloads): A tool for managing source code
+- [Visual Studio Code](https://code.visualstudio.com/): A source code editor
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): A simple web server utility for Visual Studio Code
 <!--
 Example command:
 
@@ -138,32 +149,40 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
+https://github.com/Victor-chiemerie/Leaderboard.git
 
-<!--
+
 Example commands:
 
 ```sh
   cd my-folder
   git clone git@github.com:myaccount/my-project.git
 ```
---->
+-
 
 ### Install
 
 Install this project with:
+- cd my-folder
+- git https://github.com/Victor-chiemerie/Leaderboard.git
 
-<!--
+install npx
+
 Example command:
 
 ```sh
   cd my-project
-  gem install
+  install npx
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
+- Open the cloned folder on the VS code
+- Open the live server
+- Open a new Terminal
+- Run npm start
+
 
 <!--
 Example command:
@@ -176,6 +195,8 @@ Example command:
 ### Run tests
 
 To run tests, run the following command:
+- To check for stylelint errors, run npx stylelint "**/*.{css,scss}"
+- To check for javascript error, run npx eslint .
 
 <!--
 Example command:
@@ -189,6 +210,12 @@ Example command:
 
 You can deploy this project using:
 
+- Github pages
+
+Github pages
+
+<p>follow <a href="https://www.w3schools.com/git/git_remote_pages.asp?remote=github">these steps</a> for example</p>
+
 <!--
 Example:
 
@@ -201,21 +228,16 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤**Nwadinigwe Victor**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Bobby](https://github.com/Victor-chiemerie)
+- Twitter: [@Bobby](https://twitter.com/VictorChiemer20)
+- LinkedIn: [@Bobby](https://www.linkedin.com/in/victor-nwadinigwe-460475246/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +245,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Implement an alphabetical arrangement when 2 scores have the same value]**
+- [ ] **[Add more Object properties to the player object]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +265,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project please star⭐️ the project.
+[Joshua Lyngdoh](https://github.com/joshualyngdoh) has been of tremendous help so far.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,9 +274,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to appreciate [Microverse](https://www.microverse.org/) for providing the resources and the platform for us to be a Professional full-stack developer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -267,13 +284,13 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Are you sure that you are owner of this work]**
 
-  - [Answer_1]
+  - [Yes, I am]
 
-- **[Question_2]**
+- **[Can you make the work to be responsive]**
 
-  - [Answer_2]
+  - [yes]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
