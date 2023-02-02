@@ -27,9 +27,9 @@ addBtn.addEventListener('click', async (e) => {
   const playerScore = score.value;
   if (playerName !== '' && playerScore !== '') {
     await postScore(playerName, playerScore);
-  await updateScore();
+    await updateScore();
 
-  name.value = '';
-  score.value = '';
+    name.value = '';
+    score.value = '';
   }
 });
