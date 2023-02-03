@@ -1,40 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -58,19 +23,13 @@ After you're finished please remove all the comments and instructions!
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 [Leaderboard Scores] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[Leaderboard Scores]** is a Webpage that requests and sends data from an API and load that data to the Webpage
 
+
 ## 🛠 Built With <a name="built-with"></a>
-
-<!-- ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project. -->
 
 <details>
   <summary>Client</summary>
@@ -81,13 +40,6 @@ After you're finished please remove all the comments and instructions!
     <li><a href="#">Webpack</a></li>
   </ul>
 </details>
-
-<!-- <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details> -->
 
 <details>
 <summary>Database</summary>
@@ -103,31 +55,23 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
 
 - **[Sends and receives data from an API]**
 - **[Refreshes the Webpage when the API has been Updated]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://victor-chiemerie.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -138,27 +82,11 @@ In order to run this project you need:
 - [git](https://git-scm.com/downloads): A tool for managing source code
 - [Visual Studio Code](https://code.visualstudio.com/): A source code editor
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): A simple web server utility for Visual Studio Code
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 https://github.com/Victor-chiemerie/Leaderboard.git
-
-
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
--
 
 ### Install
 
@@ -166,31 +94,20 @@ Install this project with:
 - cd my-folder
 - git https://github.com/Victor-chiemerie/Leaderboard.git
 
-install npx
-
-Example command:
-
-```sh
-  cd my-project
-  install npx
-```
-
 ### Usage
 
 To run the project, execute the following command:
 - Open the cloned folder on the VS code
-- Open the live server
-- Open a new Terminal
-- Run npm start
+- Open the live server or
+- Open a new Terminal and run npm start
 
 
-<!--
 Example command:
+on your terminal run
 
 ```sh
-  rails server
+  rnpm start
 ```
---->
 
 ### Run tests
 
@@ -198,13 +115,11 @@ To run tests, run the following command:
 - To check for stylelint errors, run npx stylelint "**/*.{css,scss}"
 - To check for javascript error, run npx eslint .
 
-<!--
 Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  npx stylelint "**/*.{css,scss}"
 ```
---->
 
 ### Deployment
 
@@ -298,7 +213,7 @@ I would like to appreciate [Microverse](https://www.microverse.org/) for providi
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](MIT.md) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 

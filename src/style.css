@@ -5,12 +5,17 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 :root {
-  --border: black;
-  --list-color: rgba(212, 209, 209, 0.884);
+  --border: white;
+  --list-color: rgba(133, 213, 80, 0.884);
   --my-border: 2px solid var(--border);
+}
+
+body {
+  background-color: rgb(23, 22, 22);
 }
 
 h1 {
@@ -55,13 +60,16 @@ ul li {
 
 ul li:nth-child(odd) {
   background: var(--list-color);
+  color: black;
 }
 
 button {
-  border: var(--my-border);
+  border: 1px solid rgb(23, 22, 22);
+  background-color: var(--list-color);
   padding: 5px;
-  box-shadow: 2px 2px black;
+  box-shadow: 2px 2px var(--list-color);
   cursor: pointer;
+  color: black;
 }
 
 form {
@@ -78,6 +86,7 @@ form button {
 input {
   width: 98%;
   padding: 6px 0 6px 5px;
+  color: black;
 }
 
 @media only screen and (min-width: 786px) {
